@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<meta name="author" content="OPS' Broker" />
+<meta name="description" content="FinSwap: A Conversation Starter — Real Bitcoin. Real smart contracts. On the only blockchain that holds Bitcoin. FinSwap is Omni-Present Solutions' answer, built on the Bitcoin blockchain through the Counterparty protocol." />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="FinSwap: A Conversation Starter" />
+<meta property="og:description" content="When your exchange app says you 'have Bitcoin,' where is that Bitcoin, actually? FinSwap — real Bitcoin and real smart contracts on the Bitcoin blockchain. By Omni-Present Solutions, Inc." />
+<!-- Created by OPS' Broker · Shared by OPS' Broker -->
+<link rel="icon" href="data:," />
+<title>FinSwap: A Conversation Starter | FinSwap</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --bg:#f2f0e9; --panel:#fbfaf6; --panel2:#efede4; --ink:#131711; --muted:#5c6357;
+  --line:#d9d5c6; --gold:#a07d10; --gold-bright:#c9a227; --green:#177245; --green-bright:#1fae62;
+  --btc:#e07f13; --chip:#e9e6da; --shadow:0 10px 30px rgba(30,30,10,.10);
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#07090a; --panel:#0d1113; --panel2:#11171a; --ink:#e9ecdf; --muted:#8f978a;
+    --line:#232b2e; --gold:#c9a227; --gold-bright:#e3bc45; --green:#1fae62; --green-bright:#2fd07c;
+    --btc:#f7931a; --chip:#161d20; --shadow:0 12px 34px rgba(0,0,0,.5);
+  }
+}
+*{box-sizing:border-box}
+html,body{overflow-x:hidden}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:"Archivo",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:16px; line-height:1.5;
+  background-image:
+    linear-gradient(var(--line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--line) 1px, transparent 1px);
+  background-size:56px 56px;
+  background-position:center top;
+}
+body::before{content:""; position:fixed; inset:0; background:var(--bg); opacity:.93; z-index:-1}
+a{color:var(--green)}
+a:focus-visible{outline:2px solid var(--gold-bright); outline-offset:2px}
+.wrap{max-width:860px; margin:0 auto; padding:0 18px 64px}
+.topbar{
+  position:sticky; top:0; z-index:40;
+  background:color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.topbar-in{max-width:860px; margin:0 auto; padding:12px 18px; display:flex; align-items:center; gap:14px; flex-wrap:wrap}
+.logo{font-weight:800; font-size:1.35rem; letter-spacing:-.02em; text-decoration:none; color:var(--ink)}
+.logo .swap{color:var(--gold)}
+.logo-mark{display:inline-grid; place-items:center; width:34px; height:34px; border-radius:9px; background:var(--ink); color:var(--gold-bright); font-family:"IBM Plex Mono",monospace; font-weight:600; margin-right:9px; vertical-align:-9px}
+.netbadge{font-family:"IBM Plex Mono",monospace; font-size:.72rem; letter-spacing:.08em; text-transform:uppercase; border:1px solid var(--line); background:var(--panel); border-radius:999px; padding:5px 11px; color:var(--muted)}
+.netbadge b{color:var(--btc); font-weight:600}
+.backlink{margin-left:auto; font-weight:700; font-size:.92rem; text-decoration:none}
+.backlink:hover{text-decoration:underline}
+article.panel{
+  background:var(--panel); border:1px solid var(--line); border-radius:16px;
+  padding:34px 34px 26px; box-shadow:var(--shadow); margin-top:30px;
+}
+@media (max-width:640px){ article.panel{padding:24px 20px 20px} }
+.kicker{font-family:"IBM Plex Mono",monospace; font-size:.72rem; letter-spacing:.14em; text-transform:uppercase; color:var(--btc); font-weight:600; margin:0 0 10px}
+h1{font-size:clamp(1.9rem,4.6vw,2.9rem); line-height:1.08; letter-spacing:-.025em; margin:0 0 10px; font-weight:800}
+.subtitle{font-size:1.15rem; color:var(--muted); margin:0 0 18px; font-weight:600}
+.byline{border-top:1px solid var(--line); border-bottom:1px solid var(--line); padding:12px 0; margin:0 0 24px; font-size:.95rem}
+.byline .org{font-weight:800}
+.byline .who{color:var(--muted)}
+article p{margin:0 0 16px; line-height:1.65}
+article h2{font-size:1.35rem; letter-spacing:-.01em; margin:30px 0 12px}
+.tag{
+  display:inline-block; font-family:"IBM Plex Mono",monospace; font-size:.64rem; font-weight:600;
+  letter-spacing:.09em; text-transform:uppercase; border:1px solid var(--gold); color:var(--gold);
+  border-radius:999px; padding:1px 8px; vertical-align:2px; white-space:nowrap;
+}
+.tag.pos{border-color:var(--green); color:var(--green)}
+ul.timeline{list-style:none; margin:0 0 8px; padding:0}
+ul.timeline li{
+  border-left:3px solid var(--gold-bright); background:var(--panel2);
+  border-radius:0 12px 12px 0; padding:14px 16px; margin:0 0 12px; line-height:1.6;
+}
+ul.timeline li .when{font-weight:800}
+.sources{font-style:italic; color:var(--muted); font-size:.95rem; border-top:1px solid var(--line); padding-top:16px}
+footer{margin-top:30px; border-top:1px solid var(--line); padding-top:18px; color:var(--muted); font-size:.88rem; display:flex; gap:14px; flex-wrap:wrap; justify-content:space-between}
+footer a{font-weight:600; text-decoration:none}
+footer a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-in">
+    <a class="logo" href="index.html"><span class="logo-mark">FS</span>Fin<span class="swap">Swap</span></a>
+    <span class="netbadge">Network · <b>Bitcoin Blockchain</b></span>
+    <a class="backlink" href="index.html">← Back to FinSwap</a>
+  </div>
+</header>
+
+<div class="wrap">
+  <article class="panel">
+    <p class="kicker">A Conversation Starter</p>
+    <h1>FinSwap: A Conversation Starter</h1>
+    <p class="subtitle">Real Bitcoin. Real smart contracts. On the only blockchain that holds Bitcoin.</p>
+    <p class="byline"><span class="org">Omni-Present Solutions, Inc.</span> <span class="who">— Honorable Jay Ladon Dickey Sr. EL, CEO and Founder</span></p>
+
+    <p>Here's a question worth arguing about in public: when your exchange app says you “have Bitcoin,” where is that Bitcoin, actually?</p>
+
+    <p><span class="tag">Verified — as a matter of how the protocol works</span> Native Bitcoin lives on one chain — the Bitcoin blockchain — and nowhere else. Everything else is a representation: a wrapped token on somebody else's chain, or a number on a custodial platform's screen that stands for a claim against that platform. That isn't a slogan; it's how the technology is built.</p>
+
+    <p><strong>FinSwap</strong> is Omni-Present Solutions' answer to that question, and you can find it at <strong>energysc.org</strong>. FinSwap is built on the Bitcoin blockchain through the <strong>Counterparty</strong> protocol (counterparty.io) — the same open-source protocol that brought tokens and contracts to Bitcoin in January 2014, years before “smart contract platform” became a marketing phrase. FinSwap's assets are Bitcoin-blockchain assets, verifiable on Bitcoin-chain explorers, and the app links directly to Bitcoin's open-source code (Bitcoin Core) and the open-source Counterparty protocol, so anyone can see what the operation sits on.</p>
+
+    <h2>The currencies — stated exactly</h2>
+    <p>Two of FinSwap's currencies are Jay's, verified on-chain against the asset-owner records:</p>
+    <ul class="timeline">
+      <li><span class="when">WEALTHTICKET</span> — <span class="tag pos">Jay's stated purpose</span> a ticket for healing and medical situations, with doctors on the platform; <span class="tag pos">Jay's stated term</span> it exchanges evenly for Bitcoin. <span class="tag">Verified</span> the asset's current owner of record is Jay's wallet address.</li>
+      <li><span class="when">PERFECTCERTS</span> — <span class="tag pos">Jay's stated purpose</span> a gold-backed currency; <span class="tag pos">Jay's stated term</span> it exchanges evenly for Bitcoin. <span class="tag">Verified</span> the asset's current owner of record is the same wallet address.</li>
+    </ul>
+
+    <p>You will see other Bitcoin-blockchain assets discussed in crypto generally. FinSwap's public materials name only the coins whose ownership is verified on the record above — that's a deliberate choice, and it's how every claim here will be handled: verified, or labeled as stated.</p>
+
+    <p><span class="tag pos">Jay's position</span> Jay also states that FinSwap is where members will buy, sell, exchange, trade, and invest across his ventures — developments, homes, cars, and land, priced in the currencies and in physical gold — all private and decentralized, with physical gold linkable to a holder's card through white-label partners. That is the stated build direction of the platform, presented here as his position and plan.</p>
+
+    <h2>The honest label</h2>
+    <p>FinSwap's app is live to visit at <strong>energysc.org</strong>, and its Bitcoin-blockchain foundation is real and checkable. <strong>In-app trading is a demo until a real wallet integration connects</strong> — that label stays on until the day it can be removed with proof, not before. If more platforms labeled their demos that plainly, the public record this campaign is correcting wouldn't be in the shape it's in.</p>
+
+    <p>The conversation we want to start is simple: <strong>shouldn't every platform have to answer the question FinSwap answers — where is the Bitcoin, and on which blockchain?</strong></p>
+
+    <p class="sources">FinSwap — energysc.org. Built on Bitcoin, through Counterparty (counterparty.io).</p>
+  </article>
+
+  <footer>
+    <span>Created by OPS' Broker · Shared by OPS' Broker</span>
+    <span><a href="index.html">FinSwap — energysc.org</a> · © OMNI-PRESENT SOLUTIONS, INC.</span>
+  </footer>
+</div>
+
+</body>
+</html>
