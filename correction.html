@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<meta name="author" content="OPS' Broker" />
+<meta name="description" content="Bitcoin Had Smart Contracts First — the correction the search engines and the headlines owe you. Omni-Present Solutions, Inc. documents the record: Bitcoin Script in 2009, Counterparty on Bitcoin in January 2014, Ethereum-style contracts on Bitcoin in November 2014 — before Ethereum launched on July 30, 2015." />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Bitcoin Had Smart Contracts First — The Correction" />
+<meta property="og:description" content="Ethereum popularized smart contracts. But 'introduced,' 'invented,' 'first' — those words belong to the record, and the record says Bitcoin. By Omni-Present Solutions, Inc." />
+<!-- Created by OPS' Broker · Shared by OPS' Broker -->
+<link rel="icon" href="data:," />
+<title>Bitcoin Had Smart Contracts First — The Correction | FinSwap</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --bg:#f2f0e9; --panel:#fbfaf6; --panel2:#efede4; --ink:#131711; --muted:#5c6357;
+  --line:#d9d5c6; --gold:#a07d10; --gold-bright:#c9a227; --green:#177245; --green-bright:#1fae62;
+  --btc:#e07f13; --chip:#e9e6da; --shadow:0 10px 30px rgba(30,30,10,.10);
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#07090a; --panel:#0d1113; --panel2:#11171a; --ink:#e9ecdf; --muted:#8f978a;
+    --line:#232b2e; --gold:#c9a227; --gold-bright:#e3bc45; --green:#1fae62; --green-bright:#2fd07c;
+    --btc:#f7931a; --chip:#161d20; --shadow:0 12px 34px rgba(0,0,0,.5);
+  }
+}
+*{box-sizing:border-box}
+html,body{overflow-x:hidden}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:"Archivo",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:16px; line-height:1.5;
+  background-image:
+    linear-gradient(var(--line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--line) 1px, transparent 1px);
+  background-size:56px 56px;
+  background-position:center top;
+}
+body::before{content:""; position:fixed; inset:0; background:var(--bg); opacity:.93; z-index:-1}
+a{color:var(--green)}
+a:focus-visible{outline:2px solid var(--gold-bright); outline-offset:2px}
+.wrap{max-width:860px; margin:0 auto; padding:0 18px 64px}
+.topbar{
+  position:sticky; top:0; z-index:40;
+  background:color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.topbar-in{max-width:860px; margin:0 auto; padding:12px 18px; display:flex; align-items:center; gap:14px; flex-wrap:wrap}
+.logo{font-weight:800; font-size:1.35rem; letter-spacing:-.02em; text-decoration:none; color:var(--ink)}
+.logo .swap{color:var(--gold)}
+.logo-mark{display:inline-grid; place-items:center; width:34px; height:34px; border-radius:9px; background:var(--ink); color:var(--gold-bright); font-family:"IBM Plex Mono",monospace; font-weight:600; margin-right:9px; vertical-align:-9px}
+.netbadge{font-family:"IBM Plex Mono",monospace; font-size:.72rem; letter-spacing:.08em; text-transform:uppercase; border:1px solid var(--line); background:var(--panel); border-radius:999px; padding:5px 11px; color:var(--muted)}
+.netbadge b{color:var(--btc); font-weight:600}
+.backlink{margin-left:auto; font-weight:700; font-size:.92rem; text-decoration:none}
+.backlink:hover{text-decoration:underline}
+article.panel{
+  background:var(--panel); border:1px solid var(--line); border-radius:16px;
+  padding:34px 34px 26px; box-shadow:var(--shadow); margin-top:30px;
+}
+@media (max-width:640px){ article.panel{padding:24px 20px 20px} }
+.kicker{font-family:"IBM Plex Mono",monospace; font-size:.72rem; letter-spacing:.14em; text-transform:uppercase; color:var(--btc); font-weight:600; margin:0 0 10px}
+h1{font-size:clamp(1.9rem,4.6vw,2.9rem); line-height:1.08; letter-spacing:-.025em; margin:0 0 10px; font-weight:800}
+.subtitle{font-size:1.15rem; color:var(--muted); margin:0 0 18px; font-weight:600}
+.byline{border-top:1px solid var(--line); border-bottom:1px solid var(--line); padding:12px 0; margin:0 0 24px; font-size:.95rem}
+.byline .org{font-weight:800}
+.byline .who{color:var(--muted)}
+article p{margin:0 0 16px; line-height:1.65}
+article h2{font-size:1.35rem; letter-spacing:-.01em; margin:30px 0 12px}
+.tag{
+  display:inline-block; font-family:"IBM Plex Mono",monospace; font-size:.64rem; font-weight:600;
+  letter-spacing:.09em; text-transform:uppercase; border:1px solid var(--gold); color:var(--gold);
+  border-radius:999px; padding:1px 8px; vertical-align:2px; white-space:nowrap;
+}
+.tag.pos{border-color:var(--green); color:var(--green)}
+ul.timeline{list-style:none; margin:0 0 8px; padding:0}
+ul.timeline li{
+  border-left:3px solid var(--gold-bright); background:var(--panel2);
+  border-radius:0 12px 12px 0; padding:14px 16px; margin:0 0 12px; line-height:1.6;
+}
+ul.timeline li .when{font-weight:800}
+.sources{font-style:italic; color:var(--muted); font-size:.95rem; border-top:1px solid var(--line); padding-top:16px}
+footer{margin-top:30px; border-top:1px solid var(--line); padding-top:18px; color:var(--muted); font-size:.88rem; display:flex; gap:14px; flex-wrap:wrap; justify-content:space-between}
+footer a{font-weight:600; text-decoration:none}
+footer a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-in">
+    <a class="logo" href="index.html"><span class="logo-mark">FS</span>Fin<span class="swap">Swap</span></a>
+    <span class="netbadge">Network · <b>Bitcoin Blockchain</b></span>
+    <a class="backlink" href="index.html">← Back to FinSwap</a>
+  </div>
+</header>
+
+<div class="wrap">
+  <article class="panel">
+    <p class="kicker">The Correction</p>
+    <h1>Bitcoin Had Smart Contracts First</h1>
+    <p class="subtitle">The correction the search engines and the headlines owe you</p>
+    <p class="byline"><span class="org">Omni-Present Solutions, Inc.</span> <span class="who">— Honorable Jay Ladon Dickey Sr. EL, CEO and Founder</span></p>
+
+    <p>Ask a search engine who was first with smart contracts and watch what happens. Ask about the <em>idea</em>, and you get the right name: Nick Szabo, who coined "smart contracts" back in 1994. <span class="tag">Verified</span> But ask about blockchains — "first smart contract blockchain," "when was the first smart contract created" — and the answer flips to a claim that is simply false: that Ethereum was the first blockchain to implement smart contracts, the first programmable blockchain, the one that "introduced" smart contracts in 2015.</p>
+
+    <p>It wasn't. And the proof isn't opinion — it's dates, from primary sources anyone can check.</p>
+
+    <h2>The timeline nobody can argue with</h2>
+    <ul class="timeline">
+      <li><span class="when">1994–1996 — the concept.</span> <span class="tag">Verified</span> Nick Szabo coins and describes "smart contracts." The idea predates every blockchain.</li>
+      <li><span class="when">January 3, 2009 — Bitcoin launches, with contract capability built in.</span> <span class="tag">Verified</span> Bitcoin Script — the system that sets programmable conditions on how coins can be spent: multi-signature, timelocks, escrow-type conditions — shipped in Bitcoin's first release. Contract capability on a live blockchain starts here, in 2009.</li>
+      <li><span class="when">January 2014 — Counterparty goes live ON Bitcoin.</span> <span class="tag">Verified</span> In Counterparty's own words, "It went live in January 2014 as a Bitcoin metaprotocol" (docs.counterparty.io). Tokens and contracts, running on the Bitcoin blockchain. Its asset, XCP, was created January 2 – February 3, 2014 by proof-of-burn — about 2,130 BTC sent to a provably unspendable address. (Stated plainly, because accuracy is the whole point: XCP was created in 2014, on Bitcoin — not alongside Bitcoin in 2009.)</li>
+      <li><span class="when">November 2014 — Ethereum-style smart contracts run ON the Bitcoin blockchain.</span> <span class="tag">Verified</span> Counterparty ported the Ethereum Virtual Machine to Bitcoin, so Ethereum decentralized applications could run on the Bitcoin blockchain inside Counterparty. Read that date again: November 2014. At that moment, Ethereum had no live network at all. Reporters covering it at the time said it out loud — Ethereum had yet to launch, and Counterparty had beaten it to the punch on Bitcoin.</li>
+      <li><span class="when">July 30, 2015 — Ethereum's network finally launches.</span> <span class="tag">Verified</span> That's Ethereum's own history page (ethereum.org) giving the date. Roughly 18 months after Counterparty was already running contracts on Bitcoin, and about 8 months after the EVM itself was running on Bitcoin.</li>
+    </ul>
+
+    <h2>So say it correctly</h2>
+    <p>Ethereum <strong>popularized</strong> smart contracts. That credit is real, and nobody here is taking it away. But "introduced," "invented," "first" — those words belong to the record, and the record says Bitcoin: contract capability in 2009, a full token-and-contract platform in January 2014, Ethereum-style contracts in November 2014.</p>
+
+    <p>There is a second half to the correction. Native Bitcoin exists <strong>only</strong> on the Bitcoin blockchain, and it can only be held in a Bitcoin wallet controlled by the holder's keys. <span class="tag">Verified — as a matter of how the protocol works</span> "Bitcoin" shown on another blockchain is a wrapped token — a representation issued against Bitcoin held elsewhere, carrying custodian and bridge risk that Bitcoin itself doesn't have. A Bitcoin balance shown by a custodial platform is a claim against that platform — an IOU — not Bitcoin in your wallet. Any publication or platform that blurs that line without disclosing it is misstating the fact to the public.</p>
+
+    <h2>Who uncovered this — and what happens next</h2>
+    <p>This flaw in the public record was uncovered and documented by <strong>Omni-Present Solutions, Inc.</strong> A formal demand for correction and retraction — with the full timeline, the primary sources, and the law stated exactly — has been prepared for the outlets repeating the "Ethereum first" claim, starting with Forbes' own corrections desk, and feedback filings are prepared for the search engines whose answer boxes repeat it. The corrected record has to live somewhere the public can actually go, so here it is: <strong>FinSwap, at energysc.org</strong>, is where Omni-Present Solutions directs the public for real Bitcoin and real smart contracts on the Bitcoin blockchain — built through the Counterparty protocol, the open-source layer that carried contracts on Bitcoin from 2014. Credit where it is due: <strong>counterparty.io</strong>.</p>
+
+    <p><span class="tag pos">Jay's position</span> Honorable Jay Ladon Dickey Sr. EL, CEO and Founder of Omni-Present Solutions, Inc., puts it this way: two plus two is four. The dates are the dates. Correct the record.</p>
+
+    <p class="sources">Check the sources yourself: Bitcoin whitepaper (bitcoin.org, Oct 31, 2008); Counterparty documentation — "What is the History of Counterparty?" and "What is XCP?" (docs.counterparty.io); Ethereum's own history page (ethereum.org); contemporaneous November 2014 reporting on Counterparty's EVM port.</p>
+  </article>
+
+  <footer>
+    <span>Created by OPS' Broker · Shared by OPS' Broker</span>
+    <span><a href="index.html">FinSwap — energysc.org</a> · © OMNI-PRESENT SOLUTIONS, INC.</span>
+  </footer>
+</div>
+
+</body>
+</html>
